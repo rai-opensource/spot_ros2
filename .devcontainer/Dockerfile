@@ -33,13 +33,13 @@ ARG SPOT_SDK_VERSION="5.0.1"
 ARG SPOT_MSG_VERSION="${SPOT_SDK_VERSION}"
 
 # Install bosdyn_msgs package
-RUN curl -sL https://github.com/bdaiinstitute/bosdyn_msgs/releases/download/${SPOT_MSG_VERSION}/ros-humble-bosdyn_msgs_${SPOT_MSG_VERSION}-jammy_amd64.run --output /tmp/ros-humble-bosdyn_msgs_${SPOT_MSG_VERSION}-jammy_amd64.run --silent \
+RUN curl -sL https://github.com/rai-opensource/bosdyn_msgs/releases/download/${SPOT_MSG_VERSION}/ros-humble-bosdyn_msgs_${SPOT_MSG_VERSION}-jammy_amd64.run --output /tmp/ros-humble-bosdyn_msgs_${SPOT_MSG_VERSION}-jammy_amd64.run --silent \
   && chmod +x /tmp/ros-humble-bosdyn_msgs_${SPOT_MSG_VERSION}-jammy_amd64.run \
   && ((yes || true) | /tmp/ros-humble-bosdyn_msgs_${SPOT_MSG_VERSION}-jammy_amd64.run) \
   && rm /tmp/ros-humble-bosdyn_msgs_${SPOT_MSG_VERSION}-jammy_amd64.run
 
 # Install spot_cpp_sdk package
-RUN curl -sL https://github.com/bdaiinstitute/spot-cpp-sdk/releases/download/v${SPOT_SDK_VERSION}/spot-cpp-sdk_${SPOT_SDK_VERSION}_amd64.deb --output /tmp/spot-cpp-sdk_${SPOT_SDK_VERSION}_amd64.deb --silent \
+RUN curl -sL https://github.com/rai-opensource/spot-cpp-sdk/releases/download/v${SPOT_SDK_VERSION}/spot-cpp-sdk_${SPOT_SDK_VERSION}_amd64.deb --output /tmp/spot-cpp-sdk_${SPOT_SDK_VERSION}_amd64.deb --silent \
   && dpkg -i /tmp/spot-cpp-sdk_${SPOT_SDK_VERSION}_amd64.deb \
   && rm /tmp/spot-cpp-sdk_${SPOT_SDK_VERSION}_amd64.deb
 

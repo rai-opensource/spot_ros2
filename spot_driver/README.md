@@ -44,7 +44,7 @@ If your Spot has an arm, some additional helpful services are exposed:
 ## More Complex Robot Commands
 The full list of interfaces provided by the driver can be explored via `ros2 topic list`, `ros2 service list`, and `ros2 action list`. 
 For more information about the custom message types used in this package, run `ros2 interface show <interface_type>`. 
-More details can also be found on the [`spot_ros2` wiki](https://github.com/bdaiinstitute/spot_ros2/wiki/Spot-Driver-Available-Interfaces). 
+More details can also be found on the [`spot_ros2` wiki](https://github.com/rai-opensource/spot_ros2/wiki/Spot-Driver-Available-Interfaces). 
 
 
 ## Images
