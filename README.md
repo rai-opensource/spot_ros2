@@ -1,18 +1,18 @@
 # Repository Migration Notice
 
 > [!IMPORTANT]
-> This repository is moving to the **RAI-Opensource** GitHub organization in **about 2 weeks from April 9, 2026 (UTC)**.
+> This repository has moved to the **RAI-Opensource** GitHub organization!
 >
-> Current status: **pre-migration**.
+> Current status: **Migrated**.
 > Migration target org: https://github.com/RAI-Opensource
+> Previous target org: https://github.com/bdaiinstitute
 >
 > What to do now:
-> - Watch this repository for the final cutover update and destination repository link.
-> - Plan to update your git remote after the move:
+> - Update your git remote:
 >   ```bash
->   git remote set-url origin <new-repository-url>
+>   git remote set-url origin https://github.com/RAI-Opensource/spot_ros2
 >   ```
-> - If you maintain downstream docs/scripts, prepare to update links from this repository to the new org.
+> - If you maintain downstream docs/scripts, update links from this repository to the new org.
 
 
 
