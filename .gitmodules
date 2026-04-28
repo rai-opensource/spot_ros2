@@ -1,10 +1,10 @@
 [submodule "spot_wrapper"]
 	path = spot_wrapper
-	url = https://github.com/bdaiinstitute/spot_wrapper.git
+	url = https://github.com/rai-opensource/spot_wrapper.git
 [submodule "synchros2"]
 	path = synchros2
-	url = https://github.com/bdaiinstitute/synchros2.git
+	url = https://github.com/rai-opensource/synchros2.git
 [submodule "spot_description"]
 	path = spot_description
-	url = https://github.com/bdaiinstitute/spot_description.git
+	url = https://github.com/rai-opensource/spot_description.git
 	branch = main
