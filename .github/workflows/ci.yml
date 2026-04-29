@@ -106,7 +106,7 @@ jobs:
       - name: Build packages
         run: |
           source /opt/ros/$ROS_DISTRO/setup.bash
-          colcon build --symlink-install --packages-up-to spot_driver spot_description spot_msgs spot_examples spot_ros2_control spot_common --cmake-args -DCMAKE_CXX_FLAGS="--coverage"
+          colcon build --symlink-install --packages-up-to spot_driver spot_description spot_msgs spot_examples spot_ros2_control spot_common spot_controllers --cmake-args -DCMAKE_CXX_FLAGS="--coverage"
         working-directory: ${{ github.workspace }}/../../
 
       - name: Test non-spot-driver packages
@@ -142,7 +142,7 @@ jobs:
         uses: coverallsapp/github-action@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          fail-on-error: true
+          fail-on-error: false
           flag-name: unittests-python
           parallel: true
           debug: true
@@ -152,7 +152,7 @@ jobs:
         uses: coverallsapp/github-action@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          fail-on-error: true
+          fail-on-error: false
           flag-name: unittests-cpp
           debug: true
           files: ../../coverage_spot_driver.info
@@ -162,6 +162,7 @@ jobs:
         uses: coverallsapp/github-action@v2
         with:
           parallel-finished: true
+          fail-on-error: false
           carryforward: "unittests-python, unittests-cpp"
 
       - if: always()
