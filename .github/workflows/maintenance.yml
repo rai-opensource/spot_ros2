@@ -5,7 +5,7 @@ on:
     - cron: "0 0 * * 0"  # once a week
 
 env:
-  ORG_NAME: bdaiinstitute
+  ORG_NAME: rai-opensource
   # github.repository as <account>/<repo>
   IMAGE_NAME: spot_ros2_jammy_humble
 

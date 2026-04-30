@@ -5,7 +5,7 @@
 
 An optional custom Automatic Eye-in-Hand Stereo Calibration Routine for the arm is available for use in the ```spot_wrapper``` submodule, where the
 output results can be used with ROS 2 for improved Depth to RGB correspondence for the hand cameras.
-See the readme at [```/spot_wrapper/spot_wrapper/calibration/README.md```](https://github.com/bdaiinstitute/spot_wrapper/tree/main/spot_wrapper/calibration/README.md) for full instructions.
+See the readme at [```/spot_wrapper/spot_wrapper/calibration/README.md```](https://github.com/rai-opensource/spot_wrapper/tree/main/spot_wrapper/calibration/README.md) for full instructions.
   
 #### [Optional] Run the Calibrated Re-Publisher
 

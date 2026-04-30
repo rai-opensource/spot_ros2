@@ -1,18 +1,18 @@
 # Repository Migration Notice
 
 > [!IMPORTANT]
-> This repository is moving to the **RAI-Opensource** GitHub organization in **about 2 weeks from April 9, 2026 (UTC)**.
+> This repository has moved to the **RAI-Opensource** GitHub organization!
 >
-> Current status: **pre-migration**.
-> Migration target org: https://github.com/RAI-Opensource
+> Current status: **Migrated**.
+> - Migration target org: https://github.com/RAI-Opensource
+> - Previous target org: https://github.com/bdaiinstitute
 >
 > What to do now:
-> - Watch this repository for the final cutover update and destination repository link.
-> - Plan to update your git remote after the move:
+> - Update your git remote:
 >   ```bash
->   git remote set-url origin <new-repository-url>
+>   git remote set-url origin https://github.com/RAI-Opensource/spot_ros2
 >   ```
-> - If you maintain downstream docs/scripts, prepare to update links from this repository to the new org.
+> - If you maintain downstream docs/scripts, update links from this repository to the new org.
 
 
 
@@ -27,11 +27,11 @@
     <a href="https://github.com/psf/black">
       <img src="https://img.shields.io/badge/code%20style-black-000000.svg"/>
     </a>
-    <a href="https://github.com/bdaiinstitute/spot_ros2/actions/workflows/ci.yml">
-      <img src="https://github.com/bdaiinstitute/spot_ros2/actions/workflows/ci.yml/badge.svg?branch=main"/>
+    <a href="https://github.com/rai-opensource/spot_ros2/actions/workflows/ci.yml">
+      <img src="https://github.com/rai-opensource/spot_ros2/actions/workflows/ci.yml/badge.svg?branch=main"/>
     </a>
-    <a href="https://coveralls.io/github/bdaiinstitute/spot_ros2?branch=main">
-      <img src="https://coveralls.io/repos/github/bdaiinstitute/spot_ros2/badge.svg?branch=main"/>
+    <a href="https://coveralls.io/github/rai-opensource/spot_ros2?branch=main">
+      <img src="https://coveralls.io/repos/github/rai-opensource/spot_ros2/badge.svg?branch=main"/>
     </a>
     <a href="LICENSE">
       <img src="https://img.shields.io/badge/license-MIT-purple"/>
@@ -51,7 +51,7 @@ This repository is supported for use with Ubuntu 22.04 and [ROS 2 Humble](https:
 Set up your ROS 2 workspace, and clone the repository in the `src` directory:
 ```bash
 mkdir -p <ROS workspace>/src && cd <ROS workspace>/src
-git clone https://github.com/bdaiinstitute/spot_ros2.git
+git clone https://github.com/rai-opensource/spot_ros2.git
 ```
 Then, initialize and install the submodules.
 ```bash
@@ -117,19 +117,19 @@ The following packages are used to enable joint level control of Spot via ROS 2 
 * [`spot_controllers`](spot_controllers): Holds some simple forwarding controller plugins useful for sending commands.
 
 This package also pulls in the following packages as submodules:
-* [`ros_utilities`](https://github.com/bdaiinstitute/ros_utilities): The RAI Institute's convenience wrappers around ROS 2.
-* [`spot_wrapper`](https://github.com/bdaiinstitute/spot_wrapper): A Python wrapper around the Spot SDK, shared as a common entry point with Spot's ROS 1 repo.
-* [`spot_description`](https://github.com/bdaiinstitute/spot_description): contains the URDF of Spot and some simple launchfiles for visualization.
+* [`ros_utilities`](https://github.com/rai-opensource/ros_utilities): The RAI Institute's convenience wrappers around ROS 2.
+* [`spot_wrapper`](https://github.com/rai-opensource/spot_wrapper): A Python wrapper around the Spot SDK, shared as a common entry point with Spot's ROS 1 repo.
+* [`spot_description`](https://github.com/rai-opensource/spot_description): contains the URDF of Spot and some simple launchfiles for visualization.
 
 This repository also depends on the `bosdyn_msgs` ROS package.
 This package contains ROS versions of [Boston Dynamics' protobufs](https://dev.bostondynamics.com/protos/bosdyn/api/proto_reference) that are used with the Spot SDK.
 As it is very large, this is installed as a debian package as part of `install_spot_ros2.sh`.
-It can be installed from source as a normal ROS package [here](https://github.com/bdaiinstitute/bosdyn_msgs) if desired instead.
+It can be installed from source as a normal ROS package [here](https://github.com/rai-opensource/bosdyn_msgs) if desired instead.
 
 
 # Help
 
-If you encounter problems when using this repository, feel free to ask a question in the [discussions](https://github.com/bdaiinstitute/spot_ros2/discussions), or open an [issue](https://github.com/bdaiinstitute/spot_ros2/issues) describing the problem in context.
+If you encounter problems when using this repository, feel free to ask a question in the [discussions](https://github.com/rai-opensource/spot_ros2/discussions), or open an [issue](https://github.com/rai-opensource/spot_ros2/issues) describing the problem in context.
 
 ## Verify Package Versions
 If you encounter `ModuleNotFoundErrors` with `bosdyn` packages upon running the driver, it is likely that the necessary Boston Dynamics API packages did not get installed with `install_spot_ros2.sh`. To check this, you can run the following command. Note that all versions should be `5.0.1`.

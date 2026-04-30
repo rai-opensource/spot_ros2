@@ -53,7 +53,7 @@ WORKDIR /ros_ws/src
 RUN rosdep init && rosdep update
 
 # Clone driver code
-RUN git clone https://github.com/bdaiinstitute/spot_ros2.git .
+RUN git clone https://github.com/rai-opensource/spot_ros2.git .
 RUN git submodule update --init --recursive
 
 # Run install script and pass in the architecture
