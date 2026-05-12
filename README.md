@@ -1,21 +1,3 @@
-# Repository Migration Notice
-
-> [!IMPORTANT]
-> This repository has moved to the **RAI-Opensource** GitHub organization!
->
-> Current status: **Migrated**.
-> - Migration target org: https://github.com/RAI-Opensource
-> - Previous target org: https://github.com/bdaiinstitute
->
-> What to do now:
-> - Update your git remote:
->   ```bash
->   git remote set-url origin https://github.com/RAI-Opensource/spot_ros2
->   ```
-> - If you maintain downstream docs/scripts, update links from this repository to the new org.
-
-
-
 <p align="center">
   <img src="spot.png" width="350">
   <h1 align="center">Spot ROS 2</h1>
@@ -171,6 +153,16 @@ ii  spot-cpp-sdk   5.0.1        amd64        Boston Dynamics Spot C++ SDK
 # License
 
 This repository has the BSD3 license for the parts of the code derived from the Clearpath Robotics ROS 1 driver and the MIT license for the parts of the code developed specifically for ROS 2.
+
+# Migration Notice
+
+On April 28, 2026 this repository moved to the **RAI-Opensource** GitHub organization.  If you are still pulling from the previous bdaiinstitute GitHub organization, please update your git remote:
+   ```bash
+   git remote set-url origin https://github.com/RAI-Opensource/spot_ros2
+   ```
+
+If you maintain downstream docs/scripts, update links from this repository to the new org.
+
 
 # Contributing
 Code contributions are welcome in this repository!
